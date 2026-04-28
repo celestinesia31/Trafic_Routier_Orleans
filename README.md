@@ -11,23 +11,6 @@ générées par les stations de comptage du réseau départemental.
 Créer un pipeline Python capable de transformer les données  brutes de 617 stations de comptage en un rapport
 d'aide à la décision, avec détection automatique des anomalies.
 
-## Structure du projet
-trafic-routier-orleans/
-│
-├── data/
-│   └── TRAFIC_POINT_2023.xlsx    # Données open data Loiret
-│
-├── notebooks/
-│   └── 01_analyse_exploratoire.ipynb
-│
-├── scripts/
-│   └── analyse_trafic.py
-│
-├── outputs/
-│   └── (graphiques générés)
-│
-└── README.md
-
 ## Stack technique
 - **Python** : pandas, numpy, matplotlib, seaborn, folium
 - **Jupyter Notebook**
