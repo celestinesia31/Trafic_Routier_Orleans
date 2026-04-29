@@ -32,5 +32,5 @@ d'aide à la décision, avec détection automatique des anomalies.
 
 ## Réalisé par:
 **Célestine LENO**  
-Master 2 Exploration Informatique des Doonées et Décisionnel et Data Science / Université Sorbonne Paris Nord & USMBA de Fès 
+Master 2 Exploration Informatique des Données et Décisionnel et Data Science / Université Sorbonne Paris Nord & USMBA de Fès 
 celestinesialeno@gmail.com
