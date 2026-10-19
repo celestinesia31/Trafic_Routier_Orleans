@@ -1,36 +1,33 @@
-# Trafic_Routier_Orleans
-Analyse automatisée du trafic routier Département du Loiret
+# 🚦 Analyse du trafic routier - Département du Loiret
 
-## Contexte
-Projet réalisé dans le cadre d'une candidature au poste de **Stagiaire Data Analyst** à Orléans Métropole (PCRT).
+Pipeline Python + tableau de bord Power BI qui transforme les données brutes de **617 stations de comptage** en indicateurs de pilotage : axes les plus chargés, part de poids lourds, anomalies de comptage.
 
-L'objectif est de démontrer la faisabilité d'une automatisation du traitement des données de trafic routier
-générées par les stations de comptage du réseau départemental.
+![Top 15 des axes](outputs/top15_axes.png)
 
-## Objectif
-Créer un pipeline Python capable de transformer les données  brutes de 617 stations de comptage en un rapport
-d'aide à la décision, avec détection automatique des anomalies.
+## Résultats
+- **617** points de comptage analysés (données ouvertes 2023)
+- Axe le plus chargé : **53 979 véhicules/jour**
+- **17 anomalies** détectées automatiquement (seuil ±2σ)
+- Part moyenne de poids lourds : **6,5 %** ; identification des axes logistiques
 
-## Stack technique
-- **Python** : pandas, numpy, matplotlib, seaborn, folium
-- **Jupyter Notebook**
-- **Source données** : Open Data Orléans Métropole / Département du Loiret
-
-## Analyses réalisées
-1. Nettoyage et fiabilisation des données
-2. Identification des axes les plus chargés
+## Démarche
+1. Nettoyage et fiabilisation (types, identifiants, valeurs manquantes)
+2. Classement des axes par trafic moyen journalier annuel (MJA)
 3. Analyse par catégorie de réseau
-4. Détection automatique des anomalies (méthode ±2σ)
-5. Identification des axes logistiques (% Poids Lourds)
-6. Carte interactive des 617 points de comptage
+4. Détection d'anomalies et axes à forte part de poids lourds
+5. Carte interactive (Folium) : `outputs/carte_trafic_orleans.html`
+6. Restitution Power BI : `Visualisation_Power_BI/` (screenshots ci-dessous)
 
-## Résultats clés
-- **617** points de comptage analysés
-- **53 979** véh/jour sur l'axe le plus chargé
-- **17** anomalies détectées automatiquement
-- **6.5%** de part Poids Lourds en moyenne
+<img width="2086" height="1034" alt="top15_axes" src="https://github.com/user-attachments/assets/a6ee6363-6fd0-4c2a-b3a5-76237fdfabdf" />
 
-## Réalisé par:
-**Célestine LENO**  
-Master 2 Exploration Informatique des Données et Décisionnel et Data Science / Université Sorbonne Paris Nord & USMBA de Fès 
-celestinesialeno@gmail.com
+
+## Stack
+Python (pandas, NumPy, matplotlib, seaborn, folium) · Power BI · Jupyter
+
+## Lancer
+Placer `TRAFIC_POINT_2023.xlsx` dans `data/` puis exécuter `notebooks/01_analyse_exploratoire_trafic_orleans.ipynb`.
+
+## Limites
+Détection ±2σ simple (distribution asymétrique) · valeurs manquantes de poids lourds à traiter explicitement plutôt que remplacées par 0 · une seule année de données.
+
+**Célestine LENO** - [LinkedIn](https://www.linkedin.com/in/celestineleno)
