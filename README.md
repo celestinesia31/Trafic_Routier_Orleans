@@ -18,7 +18,8 @@ Pipeline Python + tableau de bord Power BI qui transforme les données brutes de
 5. Carte interactive (Folium) : `outputs/carte_trafic_orleans.html`
 6. Restitution Power BI : `Visualisation_Power_BI/` (screenshots ci-dessous)
 
-<img width="2086" height="1034" alt="top15_axes" src="https://github.com/user-attachments/assets/a6ee6363-6fd0-4c2a-b3a5-76237fdfabdf" />
+<img width="2250" height="923" alt="distribution_categories" src="https://github.com/user-attachments/assets/ab605314-7f22-47ca-810a-1901ea3d0c14" />
+
 
 
 ## Stack
